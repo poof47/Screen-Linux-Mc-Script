@@ -1,0 +1,19 @@
+There will be 2 files,
+(./start.sh)
+(./boot.sh)
+
+Put them at (your/path/to/srv) 
+where your <spigot.jar> resides.
+
+After modifying the arugements to your needs, and few commands.
+download and install Screen Linux.(if not already)
+"sudo apt install screen"
+Ubuntu: example.
+
+after giving chmod 777 to your scripts,
+start a screen by typing,
+"screen -S boot"
+in that screen execute, "./start.sh"
+Screen boot will be terminated, and it will automatically create an <servername> screen.
+after your server loaded type "/restart", "CONSOLE: restart" to test if it works, on shutdown
+screen should be terminated and it will create a new one with the same name if you execute, "screen -ls"
